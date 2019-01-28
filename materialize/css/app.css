@@ -1,0 +1,37 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    letter-spacing: 2px;
+}
+
+ul li {
+    letter-spacing: 3px;
+}
+
+.btn_menu {
+    margin: 14px;
+}
+
+.text_bold {
+    font-weight: bold;
+}
+
+.upper_case {
+    text-transform: uppercase;
+}
+
+.text_size_small {
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+#person_info,
+#email_address,
+#career_info,
+#password {
+    display: none;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Turing front-end challenge</title>
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import materialize.css -->
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <link rel="stylesheet" href="materialize/css/app.css">
+
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- Side Nav List -->
+    <ul id="slide-out" class="side-nav">
+        <li></li>
+        <li class="row">
+            <a href="#" data-activates="slide-out" class="right">
+                <i class="material-icons grey-text text-darken-4" style="margin-right: 0;" onclick="$('.button-collapse').sideNav('hide');">arrow_back</i>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="text_bold  flow-text grey-text text-darken-4">Giselle</span>
+            </a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a href="#" class="waves-effect">
+                <span class="upper_case flow-text text_size_small  grey-text text-darken-1">Account</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" id="form_career_info" class="waves-effect">
+                <span class="flow-text text_size_small   grey-text text-darken-1">Career</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="#" id="form_person_info" class="waves-effect">
+                <span class="flow-text text_size_small  grey-text text-darken-1">Personal</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="waves-effect">
+                <span class="upper_case flow-text text_size_small  grey-text text-darken-1">Manage</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="#" id="form_password" class="waves-effect">
+                <span class="flow-text text_size_small  grey-text text-darken-1">Password</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" id="form_email_info" class="waves-effect">
+                <span class="flow-text text_size_small grey-text text-darken-1">Email</span>
+            </a>
+        </li>
+    </ul>
+
+    <!-- Expand/Colapse menu button -->
+    <div class="row">
+        <div class="col s1 btn_menu">
+            <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large pulse red">
+                <i class="material-icons">arrow_forward</i>
+            </a>
+        </div>
+        <div class="col s10">
+            <h5 class="right-align grey-text text-lighten-1" style="margin-top: 30px;">Giselle</h5>
+        </div>
+    </div>
+
+    <!-- Main title -->
+    <div class="row">
+        <h3 class="col s6 offset-s3 center-align grey-text text-darken-2">Your Account</h3>
+    </div>
+
+    <div class="row">
+        <p class="center-align grey-text text-lighten-1">
+            Tell us a little more about yourself
+        </p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Forms Container -->
+    <section class="container">
+        <div id="person_info" class="row">
+
+            <p class="center-align text_bold grey-text text-darken-4">Personal information</p>
+
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s10 m10 l6 offset-s1 offset-m1 offset-l3">
+                        <input placeholder="first given name" id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s10 m10 l6 offset-s1 offset-m1 offset-l3">
+                        <input placeholder="last given name" id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s10 m10 l6 offset-s1 offset-m1 offset-l3">
+                        <input placeholder="mobile phone" id="phone" type="text" class="validate">
+                        <label for="phone">Phone</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s10 m10 l6 offset-s1 offset-m1 offset-l3">
+                        <select id="country_names" name="country" class="materialSelect">
+                            <option value="" disabled selected>Choose your option</option>
+                        </select>
+                        <label for="countries">Country</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s10 m10 l6 offset-s1 offset-m1 offset-l3">
+                        <button class="btn waves-effect waves-light right red" type="submit" name="action">Save
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="email_address" class="row">
+            <p class="center-align text_bold grey-text text-darken-4">Your Email Address</p>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s10 m10 l6 offset-s1 offset-m1 offset-l3">
+                        <input placeholder="New email" id="email" type="email" class="validate">
+                        <label for="email">Email Address</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s10 m10 l6 offset-s1 offset-m1 offset-l3">
+                        <button class="btn waves-effect waves-light right red" type="submit" name="action">Save
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="career_info" class="row">
+            <p class="center-align text_bold grey-text text-darken-4">Your Career</p>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s10 m10 l6 offset-s1 offset-m1 offset-l3">
+                        <textarea id="career" class="materialize-textarea"></textarea>
+                        <label for="career">Carrer</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s10 m10 l6 offset-s1 offset-m1 offset-l3">
+                        <button class="btn waves-effect waves-light right red" type="submit" name="action">Save
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- Import jQuery before materialize.js -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+
+    <!-- Vannila JS -->
+    <script type="text/javascript" src="materialize/js/app.js"></script>
+</body>
+
+</html>
